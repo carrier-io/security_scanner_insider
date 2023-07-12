@@ -8,7 +8,7 @@ const insiderIntegration = {
     computed: {
         body_data() {
             const {
-                description,
+                config,
                 is_default,
                 selected_integration: id,
                 save_intermediates_to,
@@ -16,7 +16,7 @@ const insiderIntegration = {
                 tech,
             } = this
             return {
-                description,
+                config,
                 is_default,
                 id,
                 save_intermediates_to,
@@ -63,6 +63,7 @@ const insiderIntegration = {
         },
 
         initialState: () => ({
+            config: {},
             error: {},
             save_intermediates_to: '/data/intermediates/sast',
             timeout: 0,
