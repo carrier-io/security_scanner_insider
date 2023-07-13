@@ -93,7 +93,6 @@ const insiderIntegration = {
                 tech,
 
                 status,
-                mode,
             } = this
             return {
                 config,
@@ -105,7 +104,6 @@ const insiderIntegration = {
                 tech,
 
                 status,
-                mode,
             }
         },
         modal() {
